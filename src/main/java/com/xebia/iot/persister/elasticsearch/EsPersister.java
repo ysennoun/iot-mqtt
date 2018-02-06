@@ -31,6 +31,7 @@ public class EsPersister extends Persister {
                 );
         } catch (UnknownHostException e) {
             e.printStackTrace();
+            System.exit(1);
         }
     }
 
