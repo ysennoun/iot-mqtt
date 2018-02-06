@@ -3,26 +3,33 @@ package com.xebia.iot.main;
 import com.xebia.iot.messages.Messages;
 import com.xebia.iot.publisher.Publisher;
 
+import java.util.Scanner;
+
 public class PublisherMain {
 
     private static String mqttServerUrl;
     private static String topic;
-    private static String msg;
 
     public static void main(String[] args) {
 
-        if(args.length != 3)
-            throw new IllegalArgumentException("Expected three arguments: <MqttServerUrl> <topic> <message> ");
+        if(args.length != 2)
+            throw new IllegalArgumentException("Expected two arguments: <MqttServerUrl> <topic>");
         mqttServerUrl = args[0];
         topic = args[1];
-        msg = args[2];
 
-        Messages message = new Messages(msg);
-        Publisher publisher = new Publisher(
-                mqttServerUrl,
-                topic,
-                message.getMqttMessage()
-        );
-        publisher.send();
+        System.out.println("Start publishing. At any time, you can leave the program by tapping 'exit'.");
+        Scanner scanner = new Scanner(System.in);
+        while(scanner.hasNext()) {
+            String msg = scanner.nextLine();
+            if(msg.equals("exit"))
+                break;
+            Messages message = new Messages(msg);
+            Publisher publisher = new Publisher(
+                    mqttServerUrl,
+                    topic,
+                    message.getMqttMessage()
+            );
+            publisher.send();
+        }
     }
 }

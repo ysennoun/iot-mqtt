@@ -20,13 +20,23 @@ public class Subscriber {
 
     public void consume(){
         try {
-            client = new MqttClient(this.mqttServerUrl, MqttClient.generateClientId());
-            client.subscribe(mqttTopic);
-            client.setCallback( new SubscriberMqttCallBack(this.persisters));
-            client.connect();
+            this.client = new MqttClient(this.mqttServerUrl, MqttClient.generateClientId());
+            this.client.subscribe(mqttTopic);
+            this.client.setCallback( new SubscriberMqttCallBack(this.persisters));
+            this.client.connect();
         } catch (MqttException e) {
             e.printStackTrace();
-            System.exit(1);
+            //System.exit(1);
+        }
+    }
+
+    public void stop(){
+        if(this.client != null && !this.client.isConnected()) {
+            try {
+                this.client.disconnect();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
         }
     }
 
