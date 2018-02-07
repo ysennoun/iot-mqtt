@@ -1,10 +1,6 @@
 package com.xebia.iot.main;
 
-import com.xebia.iot.persister.Persister;
 import com.xebia.iot.subscriber.Subscriber;
-
-import java.util.ArrayList;
-
 
 public class SubscriberMain {
 
