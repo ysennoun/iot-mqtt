@@ -1,6 +1,5 @@
 package com.xebia.iot.main;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xebia.iot.persister.Persister;
 import com.xebia.iot.persister.PersisterTypeInfo;
 import com.xebia.iot.persister.PersitersTypeInfo;
@@ -16,17 +15,15 @@ import java.util.ArrayList;
 public class InputArgumentsParser {
 
     private String filePath;
-    private String content;
 
     public InputArgumentsParser(String filePath) {
         this.filePath = filePath;
-        this.content = getContentConfigurationFilePath();
     }
 
-    private String getContentConfigurationFilePath() {
+    public static String getContentConfigurationFilePath(String filePath) {
         String content = null;
         try {
-            content = new String ( Files.readAllBytes( Paths.get(this.filePath) ) );
+            content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
@@ -34,20 +31,9 @@ public class InputArgumentsParser {
         return content;
     }
 
-    private PersitersTypeInfo parseContentConfigurationFilePath() {
-        PersitersTypeInfo result = null;
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            result = objectMapper.readValue(this.content, PersitersTypeInfo.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-        return result;
-    }
-
     public ArrayList<Persister> getPersisters() {
-        PersitersTypeInfo persitersTypeInfo = parseContentConfigurationFilePath();
+        String content = getContentConfigurationFilePath(this.filePath);
+        PersitersTypeInfo persitersTypeInfo = PersitersTypeInfo.parseJsonContent(content);
         ArrayList<Persister> persisters = new ArrayList<Persister>();
         for(PersisterTypeInfo pti : persitersTypeInfo.getPersisters()) {
             switch (pti.getType()){

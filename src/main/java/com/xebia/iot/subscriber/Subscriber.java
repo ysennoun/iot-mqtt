@@ -20,14 +20,12 @@ public class Subscriber {
 
     public void consume(){
         try {
-            client = new MqttClient(this.mqttServerUrl, MqttClient.generateClientId());
-            client.subscribe(mqttTopic);
-            client.setCallback( new SubscriberMqttCallBack(this.persisters));
-            client.connect();
+            this.client = new MqttClient(this.mqttServerUrl, MqttClient.generateClientId());
+            this.client.connect();
+            this.client.subscribe(mqttTopic);
+            this.client.setCallback( new SubscriberMqttCallBack(this.persisters));
         } catch (MqttException e) {
             e.printStackTrace();
-            System.exit(1);
         }
     }
-
 }

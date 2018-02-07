@@ -4,13 +4,13 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import java.io.UnsupportedEncodingException;
 
-public class Messages {
+public class Message {
 
     private static String CHARSET_NAME = "UTF-8";
     private MqttMessage mqttMessage;
     private String message;
 
-    public Messages(String message) {
+    public Message(String message) {
 
         mqttMessage = new MqttMessage();
         this.message = message;

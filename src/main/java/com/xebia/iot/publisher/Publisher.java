@@ -3,6 +3,7 @@ package com.xebia.iot.publisher;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class Publisher {
 
@@ -25,7 +26,6 @@ public class Publisher {
             client.disconnect();
         } catch (MqttException e) {
             e.printStackTrace();
-            System.exit(1);
         }
     }
 }
