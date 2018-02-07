@@ -1,6 +1,6 @@
 package com.xebia.iot.main;
 
-import com.xebia.iot.messages.Messages;
+import com.xebia.iot.messages.Message;
 import com.xebia.iot.publisher.Publisher;
 
 import java.util.Scanner;
@@ -17,13 +17,13 @@ public class PublisherMain {
         mqttServerUrl = args[0];
         topic = args[1];
 
-        System.out.println("Start publishing. At any time, you can leave the program by tapping 'exit'.");
+        System.out.println("Start publishing... At any time, you can leave the program by tapping 'exit'.");
         Scanner scanner = new Scanner(System.in);
         while(scanner.hasNext()) {
             String msg = scanner.nextLine();
             if(msg.equals("exit"))
                 break;
-            Messages message = new Messages(msg);
+            Message message = new Message(msg);
             Publisher publisher = new Publisher(
                     mqttServerUrl,
                     topic,
