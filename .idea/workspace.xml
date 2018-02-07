@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220fb6a1-2a92-4935-bef8-c59e492c1279" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/xebia/iot/persister/PersistersTypeInfoTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/Subscriber.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/Subscriber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/SubscriberMqttCallBack.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/SubscriberMqttCallBack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" afterPath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/java/config/moquette.conf" afterPath="$PROJECT_DIR$/src/test/resources/config/moquette.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -18,23 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PublisherTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
+      <file leaf-file-name="PersistersTypeInfoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="355">
+              <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoquetteMqttServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
+      <file leaf-file-name="PublisherTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="315">
+              <caret line="21" column="79" lean-forward="false" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/ConsumerMqttCallBack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/mqtt/ConsumerMqttCallBack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/producer/PersisterInfo.java" />
@@ -103,13 +103,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersisterTypeInfoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/persister/PPP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/persister/PersitersTypeInfo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/elasticsearch/EsPersisterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/persister/elasticsearch/EsPersister.java" />
         <option value="$PROJECT_DIR$/src/test/java/JavaScannerExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/main/PublisherMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/persister_config.json" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/IngestBanoPlugin.java" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/EsINtegrationTest.java" />
@@ -120,12 +117,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/publisher/Publisher.java" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/MoquetteMqttServer.java" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/PublishSubscribeIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/SubscriberMqttCallBack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/Subscriber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/subscriber/SubscriberTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/fileTest.txt" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/moquette/MoquetteMqttServer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" />
       </list>
     </option>
   </component>
@@ -184,35 +185,6 @@
               <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="moquette" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,6 +206,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="persister" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
@@ -249,6 +229,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,6 +255,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.xebia.iot.publisher" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="moquette" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SubscriberTest.testSubscriber">
+  <component name="RunManager">
     <configuration name="PublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -496,9 +490,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SubscriberTest.testSubscriber" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SubscriberTest.testPublisher" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PublisherTest.testPublisher" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PublisherTest.testPublisher" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SubscriberTest.testSubscriber" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SubscriberTest.testPublisher" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.PublisherTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.PublisherTest.testServer" />
       </list>
@@ -529,10 +523,10 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PublisherTest - 2018.02.07 at 10h 28m 50s.xml">
-      <configuration name="PublisherTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PublisherTest_testPublisher - 2018.02.07 at 10h 29m 21s.xml">
+      <configuration name="PublisherTest.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PublisherTest_testPublisher - 2018.02.07 at 11h 23m 50s.xml">
       <configuration name="PublisherTest.testPublisher" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SubscriberTest_testPublisher - 2018.02.07 at 10h 36m 36s.xml">
@@ -562,7 +556,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="975" height="807" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -573,13 +566,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.755618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7205056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27949437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8272472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31832796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27224007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -605,20 +598,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/junit/framework/TestSuite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/junit/framework/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/mqtt/AppTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xebia/iot/persister/console/ConsolePersisterInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/console/ConsolePersisterTest.java" />
@@ -730,33 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/persister_config.json" />
     <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/IngestBanoPlugin.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/test/framework/6.1.3/framework-6.1.3.jar!/org/elasticsearch/test/ESIntegTestCase.class">
@@ -837,8 +789,8 @@
         <state relative-caret-position="285">
           <caret line="26" column="74" lean-forward="false" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
           <folding>
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,20 +827,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/moquette.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="34">
           <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/main/InputArgumentsParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/persister/PersistersTypeInfoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="79" lean-forward="false" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

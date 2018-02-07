@@ -12,11 +12,15 @@ public class PublisherTest extends TestCase {
     private static String URI = "tcp://localhost:1883";
 
     public void testPublisher(){
+        System.out.println("--BEGIN TEST--");
         MoquetteMqttServer.runTemporaryMqttBroker();
         Message message = new Message(MSG);
         Publisher publisher = new Publisher(URI, TOPIC, message.getMqttMessage());
         System.out.println("Publish : " + MSG);
         publisher.send();
+
+        System.out.println("Test on Publisher :  get the same message published");
         assertEquals(MSG, MoquetteMqttServer.getMsg());
+        System.out.println("--END--");
     }
 }

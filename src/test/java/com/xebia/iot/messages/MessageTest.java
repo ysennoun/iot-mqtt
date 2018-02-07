@@ -14,11 +14,17 @@ public class MessageTest extends TestCase {
 
     public void testRightMessage()
     {
+        System.out.println("--BEGIN TEST--");
+        System.out.println("Test on Message: be same.");
         assertEquals(msg, getMessage(msg));
+        System.out.println("--END--");
     }
 
     public void testWrongMessage()
     {
+        System.out.println("--BEGIN TEST--");
+        System.out.println("Test on Message: not be same.");
         assertNotSame(wrongMsg, getMessage(msg));
+        System.out.println("--END--");
     }
 }
