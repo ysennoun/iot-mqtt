@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 public class Subscriber {
 
-    private MqttClient client;
-    private String mqttServerUrl;
-    private String mqttTopic;
-    private ArrayList<Persister> persisters;
+    private static MqttClient client;
+    private static String mqttServerUrl;
+    private static String mqttTopic;
+    private static ArrayList<Persister> persisters;
 
     public Subscriber(String mqttServerUrl, String mqttTopic, ArrayList<Persister> persisters){
         this.mqttServerUrl = mqttServerUrl;
@@ -20,10 +20,10 @@ public class Subscriber {
 
     public void consume(){
         try {
-            this.client = new MqttClient(this.mqttServerUrl, MqttClient.generateClientId());
-            this.client.connect();
-            this.client.subscribe(mqttTopic);
-            this.client.setCallback( new SubscriberMqttCallBack(this.persisters));
+            client = new MqttClient(mqttServerUrl, MqttClient.generateClientId());
+            client.connect();
+            client.subscribe(mqttTopic);
+            client.setCallback( new SubscriberMqttCallBack(persisters));
         } catch (MqttException e) {
             e.printStackTrace();
         }

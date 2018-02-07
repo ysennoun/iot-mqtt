@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class InputArgumentsParser {
 
-    private String filePath;
+    private static String filePath;
 
     public InputArgumentsParser(String filePath) {
         this.filePath = filePath;
@@ -32,7 +32,7 @@ public class InputArgumentsParser {
     }
 
     public ArrayList<Persister> getPersisters() {
-        String content = getContentConfigurationFilePath(this.filePath);
+        String content = getContentConfigurationFilePath(filePath);
         PersitersTypeInfo persitersTypeInfo = PersitersTypeInfo.parseJsonContent(content);
         ArrayList<Persister> persisters = new ArrayList<Persister>();
         for(PersisterTypeInfo pti : persitersTypeInfo.getPersisters()) {

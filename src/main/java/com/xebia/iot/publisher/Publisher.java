@@ -7,10 +7,10 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class Publisher {
 
-    private MqttClient client;
-    private String mqttServerUrl;
-    private String mqttTopic;
-    private MqttMessage mqttMessage;
+    private static MqttClient client;
+    private static String mqttServerUrl;
+    private static String mqttTopic;
+    private static MqttMessage mqttMessage;
 
     public Publisher(String mqttServerUrl, String mqttTopic, MqttMessage mqttMessage) {
         this.mqttServerUrl = mqttServerUrl;

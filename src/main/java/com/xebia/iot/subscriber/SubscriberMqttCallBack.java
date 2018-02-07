@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class SubscriberMqttCallBack implements MqttCallback {
 
-    private ArrayList<Persister> persisters;
+    private static ArrayList<Persister> persisters;
 
     public SubscriberMqttCallBack(ArrayList<Persister> persisters) {
         this.persisters = persisters;

@@ -2,18 +2,15 @@ package com.xebia.iot.persister;
 
 public class PersisterTypeInfo {
 
-    private String type;
-    private String brokers = "";
-    private String index = "";
+    private static String type;
+    private static String brokers = "";
+    private static String index = "";
 
     public String getType() {
-        return this.type;
+        return type;
     }
 
-    public String getBrokers() {
-        return this.brokers;
-    }
+    public String getBrokers() { return brokers; }
 
-    public String getIndex() { return this.index;
-    }
+    public String getIndex() { return index; }
 }

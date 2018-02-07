@@ -7,23 +7,20 @@ import java.io.UnsupportedEncodingException;
 public class Message {
 
     private static String CHARSET_NAME = "UTF-8";
-    private MqttMessage mqttMessage;
-    private String message;
+    private static MqttMessage mqttMessage;
+    private static String message;
 
     public Message(String message) {
-
         mqttMessage = new MqttMessage();
         this.message = message;
         constructMqttMessage();
     }
 
     private void constructMqttMessage() {
-        this.mqttMessage.setPayload(this.message.getBytes());
+        mqttMessage.setPayload(message.getBytes());
     }
 
-    public MqttMessage getMqttMessage() {
-        return this.mqttMessage;
-    }
+    public MqttMessage getMqttMessage() { return mqttMessage; }
 
     public String getPaylodFromMqttMessage() {
         try {
