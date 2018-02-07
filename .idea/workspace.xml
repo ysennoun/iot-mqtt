@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220fb6a1-2a92-4935-bef8-c59e492c1279" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/java/config/moquette.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_13_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/PublishSubscribeIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/messages/Messages.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/xebia/iot/messages/MessagesTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/xebia/iot/messages/Messages.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebia/iot/messages/Message.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessagesTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebia/iot/messages/MessageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/main/InputArgumentsParser.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/main/InputArgumentsParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/main/PublisherMain.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/main/PublisherMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/publisher/Publisher.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/publisher/Publisher.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/xebia/iot/persister/PersistersTypeInfoTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/Subscriber.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/Subscriber.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/SubscriberMqttCallBack.class" afterPath="$PROJECT_DIR$/target/classes/com/xebia/iot/subscriber/SubscriberMqttCallBack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iot-mqtt.iml" afterPath="$PROJECT_DIR$/iot-mqtt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xebia/iot/main/InputArgumentsParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebia/iot/main/InputArgumentsParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xebia/iot/main/PublisherMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebia/iot/main/PublisherMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xebia/iot/publisher/Publisher.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebia/iot/publisher/Publisher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/Subscriber.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/Subscriber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" afterPath="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -41,7 +17,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PublisherTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoquetteMqttServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,11 +121,11 @@
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/MoquetteMqttServer.java" />
         <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/mqtt/PublishSubscribeIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java" />
-        <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/SubscriberMqttCallBack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/Subscriber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xebia/iot/subscriber/SubscriberTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/fileTest.txt" />
+        <option value="$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java" />
       </list>
     </option>
   </component>
@@ -196,6 +197,22 @@
               <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="it" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="moquette" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="it" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,6 +234,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-mqtt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iot-mqtt" type="b2602c69:ProjectViewProjectNode" />
@@ -537,6 +562,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="975" height="807" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -550,10 +576,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.755618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27949437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49624866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31832796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -763,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/java/config/moquette.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xebia/iot/publisher/Publisher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -814,16 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xebia/iot/subscriber/SubscriberMqttCallBack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -851,21 +859,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/fileTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/java/config/moquette.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xebia/iot/publisher/PublisherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/fileTest.txt">
+    <entry file="file://$PROJECT_DIR$/src/it/java/com/xebia/iot/moquette/MoquetteMqttServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

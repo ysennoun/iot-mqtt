@@ -17,7 +17,7 @@ public class MoquetteMqttServer extends AbstractInterceptHandler {
 
     @Override
     public void onPublish(InterceptPublishMessage message) {
-        System.out.println("moquette mqtt broker message intercepted, topic: " + message.getTopicName()
+        System.out.println("Moquette mqtt broker message intercepted, topic: " + message.getTopicName()
                 + ", content: " + new String(message.getPayload().array()));
         this.msg = new String(message.getPayload().array());
     }
