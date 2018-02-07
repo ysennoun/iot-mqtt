@@ -1,4 +1,4 @@
-package com.xebia.iot.moquette;
+package com.xebia.iot.publisher;
 
 import io.moquette.interception.AbstractInterceptHandler;
 import io.moquette.interception.InterceptHandler;

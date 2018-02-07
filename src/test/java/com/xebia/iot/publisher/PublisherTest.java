@@ -1,7 +1,6 @@
 package com.xebia.iot.publisher;
 
 import com.xebia.iot.messages.Message;
-import com.xebia.iot.moquette.MoquetteMqttServer;
 import junit.framework.TestCase;
 
 
