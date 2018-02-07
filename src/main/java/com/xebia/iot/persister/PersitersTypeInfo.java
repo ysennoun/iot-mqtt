@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class PersitersTypeInfo {
 
-    private static ArrayList<PersisterTypeInfo> persisters;
+    private ArrayList<PersisterTypeInfo> persisters;
 
     public ArrayList<PersisterTypeInfo>  getPersisters() {
         return persisters;
@@ -23,7 +23,6 @@ public class PersitersTypeInfo {
         }
         return result;
     }
-
 }
 
 
