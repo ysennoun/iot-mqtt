@@ -2,7 +2,7 @@ package com.xebia.iot.main;
 
 import com.xebia.iot.persister.Persister;
 import com.xebia.iot.persister.PersisterTypeInfo;
-import com.xebia.iot.persister.PersitersTypeInfo;
+import com.xebia.iot.persister.PersistersTypeInfo;
 import com.xebia.iot.persister.console.ConsolePersister;
 import com.xebia.iot.persister.elasticsearch.EsPersister;
 import com.xebia.iot.persister.elasticsearch.EsPersisterInfo;
@@ -31,9 +31,16 @@ public class InputArgumentsParser {
         return content;
     }
 
+    public static void main(String[] args) {
+        InputArgumentsParser ii = new InputArgumentsParser("/Users/sennoun/Desktop/persisters_configuration_file.json");
+        //System.setProperty("es.set.netty.runtime.available.processors", "false");
+        for(Persister persister: ii.getPersisters())
+            persister.persiste("tokyo istanbul");
+    }
+
     public ArrayList<Persister> getPersisters() {
         String content = getContentConfigurationFilePath(filePath);
-        PersitersTypeInfo persitersTypeInfo = PersitersTypeInfo.parseJsonContent(content);
+        PersistersTypeInfo persitersTypeInfo = PersistersTypeInfo.parseJsonContent(content);
         ArrayList<Persister> persisters = new ArrayList<Persister>();
         for(PersisterTypeInfo pti : persitersTypeInfo.getPersisters()) {
             switch (pti.getType()){
