@@ -22,7 +22,7 @@ public class PublisherMain {
         while(scanner.hasNext()) {
             String msg = scanner.nextLine();
             if(msg.equals("exit"))
-                break;
+                System.exit(0);
             Message message = new Message(msg);
             Publisher publisher = new Publisher(
                     mqttServerUrl,

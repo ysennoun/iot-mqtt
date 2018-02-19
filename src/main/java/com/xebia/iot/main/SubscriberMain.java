@@ -18,7 +18,6 @@ public class SubscriberMain {
         configurationFilePath = args[2];
 
         InputArgumentsParser inputArgsParser = new InputArgumentsParser(configurationFilePath);
-
         Subscriber subscriber = new Subscriber(
                 mqttServerUrl,
                 topic,

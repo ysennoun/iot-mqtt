@@ -24,5 +24,5 @@ public class SubscriberMqttCallBack implements MqttCallback {
             persister.persiste(new String(mqttMessage.getPayload()));
     }
 
-    public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) { }
+    public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {}
 }
