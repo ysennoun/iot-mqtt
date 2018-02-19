@@ -8,7 +8,7 @@ public class PublisherTest extends TestCase {
 
     private static String MSG = "Hello IoT";
     private static String TOPIC = "topic_test";
-    private static String URI = "tcp://localhost:1883";
+    private static String URI = "tcp://127.0.0.1:1883";
 
     public void testPublisher(){
         System.out.println("--BEGIN TEST--");
