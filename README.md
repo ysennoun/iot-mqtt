@@ -22,4 +22,4 @@ where `<serverUri>` is alike: `"tcp://<mqtt-broker-ip>:1883"`
 
 To create a subscriber, execute the following command:
 
-	java -cp iot-mqtt-1.0-SNAPSHOT-jar-with-dependencies.jar com.xebia.iot.main.PublisherMain <serverUri> <topic>
+	java -cp iot-mqtt-1.0-SNAPSHOT-jar-with-dependencies.jar com.xebia.iot.main.PublisherMain <serverUri> <topic> <configFilePath>
